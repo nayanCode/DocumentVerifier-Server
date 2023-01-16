@@ -1,13 +1,10 @@
 import express from  'express';
-import { userSignUp } from '../controller/user-controller.js';
-
-
-
+import {studentRequestcontroller, userLogIn} from '../controller/studentcontroller.js';
 
 const router = express.Router();
 
-
-router.post('/http://localhost:8000/sentRequest', userSignUp);
+router.post('/login', userLogIn);
+router.post('/sentRequest', studentRequestcontroller);
 
 
 export default router;

@@ -45,7 +45,7 @@ app.post('/uploadfile', (req, res) => {
 
   const file = req.files.file;
 
-  console.log(file);
+  //console.log(file);
 
   file.mv(`../client/public/storage/${file.name}`, err => {
     if (err) {

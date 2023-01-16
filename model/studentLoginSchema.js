@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 const studentRequestSchema = new mongoose.Schema({
     //id: String,
     name: String,
-    roll: String,
+    rollno: String,
     yearofgraduating: String
 
 });
