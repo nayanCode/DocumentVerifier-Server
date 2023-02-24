@@ -10,4 +10,4 @@ const studentRequestSchema = new mongoose.Schema({
 });
 
 const studentRequest = mongoose.model('studentRequest', studentRequestSchema);
-export default studentRequest;
+export default studentRequest;//request export
