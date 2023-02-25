@@ -8,6 +8,7 @@ const studentStatusSchema = new mongoose.Schema({
     rollno: String,
     yearofgraduating: String,
     status:String,
+    hash:String,
     date:Date,
    
 });

@@ -77,3 +77,15 @@ export const updateStatus = async (request, response) => {
         response.status(500).json(error)
     }
 }
+
+export const updateHash = async (request, response) => {
+    try {
+        
+        const newStatus = await studentStatus.updateOne({'rollno':request.params.id},{$set: {'hash':request.params.hash}
+      
+    });
+        response.status(200).json(newStatus);
+    }catch (error) {
+        response.status(500).json(error)
+    }
+}
