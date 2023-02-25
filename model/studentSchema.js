@@ -8,7 +8,6 @@ const studentSchema = new mongoose.Schema({
     yearofgraduating: String, 
     email:String,
     password:String,
-    date: Date,
   
 });
 

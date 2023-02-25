@@ -5,9 +5,8 @@ const studentRequestSchema = new mongoose.Schema({
     //id: String,
     name: String,
     rollno: String,
-    yearofgraduating: String,
-    date:Date,
-   
+    yearofgraduating: String
+
 });
 
 const studentRequest = mongoose.model('studentRequest', studentRequestSchema);
